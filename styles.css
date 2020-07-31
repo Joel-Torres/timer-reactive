@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* typography */
+h1 {
+    font-size: 2rem;
+
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h1,
+h2 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    margin: 0;
+    color: #143774;
+}
+
+.subtitle {
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin: 0;
+    color: #1792d2;
+}
+
+/* layout */
+header {
+    background: #F8F8F8;
+    padding: 2em 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:675px) {
+    .container-nav {
+        flex-direction: column;
+    }
+
+    header {
+        text-align: center;
+        padding:  1em 0 0.5em 0;
+    }
+}
+
+/* navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+@media (max-width: 675px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 0.25em 0;
+    }
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #707070;
+    padding: .25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1792d2;
+}
+
+/* timer component */
+.timer-ui {
+    margin: 1em auto;
+    text-align: center;
+}
+
+
